@@ -1,0 +1,76 @@
+{
+  "expo": {
+    "name": "PAB",
+    "slug": "PWBapp",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icons/appTile2.png",
+    "scheme": "pregnantandblack",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "ios": {
+      "supportsTablet": false,
+      "usesAppleSignIn": true,
+      "bundleIdentifier": "com.pregnantandblack.pab",
+      "buildNumber": "10",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false,
+        "CFBundleURLTypes": [
+          {
+            "CFBundleURLSchemes": [
+              "pregnantandblack",
+              "com.pregnantandblack.pab"
+            ]
+          },
+          {
+            "CFBundleURLSchemes": [
+              "com.googleusercontent.apps.355037901737-e68nrm9pur15j0va8ghpso5li59n08fu"
+            ]
+          }
+        ]
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/icons/appTile2.png",
+        "backgroundColor": "#ffffff"
+      },
+      "edgeToEdgeEnabled": true,
+      "package": "com.pab.app"
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static",
+      "favicon": "./assets/icons/pabIconAccent.png"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/icons/appTile2.png",
+          "imageWidth": 200,
+          "resizeMode": "contain",
+          "backgroundColor": "#ffffff"
+        }
+      ],
+      "expo-web-browser",
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Allow PAB to access your photos to upload images."
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "4626e17c-1b78-473b-871f-2b8a568745ee"
+      }
+    },
+    "owner": "vonnemayon"
+  }
+}
